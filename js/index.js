@@ -11,17 +11,17 @@ $(buttons).on('click', function(event) {
       current += $target.text();
       // console.log(current);
     } else if($target.text() === '=') {
-      number2.push(current);
-      if (operator === '+') {
-        add(number1, number2);
-      } else if (operator === '÷') {
-        divide(number1, number2);
-      } else if (operator === 'x') {
-        multiply(number1, number2);
-      } else if (operator === '-') {
-        subtract(number1, number2);
-      } 
-    } else {
+        number2.push(current);
+        if (operator === '+') {
+          add(number1, number2);
+        } else if (operator === '÷') {
+          divide(number1, number2);
+        } else if (operator === 'x') {
+          multiply(number1, number2);
+        } else if (operator === '-') {
+          subtract(number1, number2);
+        }
+      } else {
         number1.push(current);
         current = '0';
         operator = $target.text();
